@@ -63,7 +63,7 @@ def binarySearch(A:list, d) -> int:
       else:
          r = m - 1
       
-   print(f"{d} not in the list")
+   print(f"{d} not in the list.")
    return -1
 
 # Example 
