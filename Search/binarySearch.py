@@ -51,7 +51,7 @@ def binarySearch(A:list, d) -> int:
     
    while l <= r:
        
-      m = floor((l+r)/2)
+      m = (l+r)//2
        
       if A[m] == d:
          print(f"{d} found at index: {m}.")
@@ -60,13 +60,12 @@ def binarySearch(A:list, d) -> int:
       elif A[m] < d:
          l = m + 1
       
-      elif A[m] > d:
+      else:
          r = m - 1
       
-      else:
-         print("Data not in the list")
-         return -1
+   print("Data not in the list")
+   return -1
 
 # Example 
 A = [5 ,9,17,23,25,45,59,63,71,89]
-binarySearch(A, 99)
+binarySearch(A, 89)
