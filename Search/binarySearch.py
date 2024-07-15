@@ -3,7 +3,6 @@ Author: Jotham Masila
 Copyright 2024.
 """
 
-from math import floor
 
 """
 NOTES
@@ -45,7 +44,7 @@ If the array is not sorted, or if the other conditions are not satisfied, altern
 
  
 def binarySearch(A:list, d) -> int:
-    
+   
    l = 0
    r = len(A) - 1
     
@@ -67,5 +66,5 @@ def binarySearch(A:list, d) -> int:
    return -1
 
 # Example 
-A = [5 ,9,17,23,25,45,59,63,71,89]
-binarySearch(A, 89)
+# A = [5 ,9,17,23,25,45,59,63,71,89]
+# binarySearch(A, 89)
